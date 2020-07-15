@@ -32,11 +32,11 @@ mv -v ADEChallengeData2016/annotations/validation/* ../SPADE/datasets/ADE/sametr
 
 
 #testing 
-python test.py --name coco_pretrained --dataset_mode coco --dataroot ../SPADE/datasets/fullcoco_stuff/
-python test.py --name coco_pretrained --dataset_mode coco --dataroot /content/SPADE/datasets/fullcoco_stuff/
+#python test.py --name coco_pretrained --dataset_mode coco --dataroot ../SPADE/datasets/fullcoco_stuff/
+#python test.py --name coco_pretrained --dataset_mode coco --dataroot /content/SPADE/datasets/fullcoco_stuff/
 #CUDA_VISIBLE_DEVICES=3 python test.py --name ade20k_pretrained --dataset_mode ade20k --dataroot ../SPADE/datasets/ADE/sametrainlabel 
 
 #traing 
-python train.py --dataset_mode coco --dataroot ../SPADE/datasets/fullcoco_stuff >> testLog/log1.txt
-python train.py --name cocofull --dataset_mode coco --dataroot ../SPADE/datasets/fullcoco_stuff --gpu_ids 2,4 --tf_log
-python train.py --name ADE --dataset_mode facades --dataroot ../SPADE/datasets/fullcoco_stuff --gpu_ids 2,4 --tf_log
+#python train.py --dataset_mode coco --dataroot ../SPADE/datasets/fullcoco_stuff >> testLog/log1.txt
+#python train.py --name cocofull --dataset_mode coco --dataroot ../SPADE/datasets/fullcoco_stuff --gpu_ids 2,4 --tf_log
+#python train.py --name ADE --dataset_mode facades --dataroot ../SPADE/datasets/fullcoco_stuff --gpu_ids 2,4 --tf_log
